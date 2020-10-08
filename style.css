@@ -14,6 +14,8 @@ header {
 
 header h1 {
 	padding: 0 1em 0 1em;
+	text-align: center;
+	font-size: 5em;
 }
 
 header li {
@@ -39,19 +41,26 @@ main {
 }
 
 main div {
-	border: 10px solid black;
-	text-align: center;
+	
+	text-align: left;
 	padding: 1em;
+}
+
+.section-title {
+	text-align: right;
+	font-style: bold;
 }
 
 main div img {
 	max-width: 100%;
 }
 
+/*
 main div:hover {
 	background-color: #6f9501;
 	color: white;
 }
+*/
 
 .image img {
 	position: fixed;
