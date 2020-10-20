@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
 	font-family: prestige-elite-std, monospace;
 	font-weight: 700;
@@ -15,18 +19,23 @@ body{
 header {
 	position: fixed;
 	top: 0;
-	
+	left: 0;
 	background: whitesmoke;
 	color: red;
 	width: 100%;
-	mix-blend-mode: darken;
+	text-align: left;
+	mix-blend-mode: difference;
 }
 
 header h1 {
-	padding: 0 1em 0 1em;
-	text-align: center;
+	text-align: left;
 	font-size: 5em;
 	
+}
+
+header ul {
+	text-align: left;
+	padding: 0 1em 0 1em;
 }
 
 header li {
@@ -51,7 +60,8 @@ main {
 	grid-row-gap: 3em;
 	margin: 4em;
 	padding-top: 30%;
-	color: gray;
+	mix-blend-mode: difference;
+	color: black;
 }
 
 main div {	
@@ -62,6 +72,11 @@ main div {
 .section-title {
 	text-align: right;
 	font-style: bold;
+}
+
+.section-details {
+
+	background: ;
 }
 
 main div img {
