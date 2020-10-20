@@ -21,10 +21,10 @@ header {
 	top: 0;
 	left: 0;
 	background: whitesmoke;
+	background: orange;
 	color: red;
 	width: 100%;
 	text-align: left;
-	mix-blend-mode: difference;
 }
 
 header h1 {
@@ -60,7 +60,7 @@ main {
 	grid-row-gap: 3em;
 	margin: 4em;
 	padding-top: 30%;
-	mix-blend-mode: difference;
+	mix-blend-mode: color-dodge;
 	color: black;
 }
 
@@ -72,6 +72,7 @@ main div {
 .section-title {
 	text-align: right;
 	font-style: bold;
+	color: gray;
 }
 
 .section-details {
