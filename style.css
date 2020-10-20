@@ -25,6 +25,7 @@ header {
 	color: red;
 	width: 100%;
 	text-align: left;
+	isolation: isolate;
 }
 
 header h1 {
@@ -60,8 +61,9 @@ main {
 	grid-row-gap: 3em;
 	margin: 4em;
 	padding-top: 30%;
-	mix-blend-mode: color-dodge;
+	mix-blend-mode: difference;
 	color: black;
+	
 }
 
 main div {	
@@ -77,7 +79,7 @@ main div {
 
 .section-details {
 
-	background: white;
+	color: white;
 }
 
 main div img {
