@@ -9,7 +9,9 @@ html {
 }
 
 body{
+
 	background: #FFF1E5;
+	background: #d64220;
 }
 
 .blend-container {
@@ -21,11 +23,10 @@ header {
 	top: 0;
 	left: 0;
 	background: whitesmoke;
-	background: orange;
-	color: red;
+	background: white;
+	color: black;
 	width: 100%;
 	text-align: left;
-	isolation: isolate;
 }
 
 header h1 {
@@ -61,8 +62,10 @@ main {
 	grid-row-gap: 3em;
 	margin: 4em;
 	padding-top: 30%;
-	mix-blend-mode: difference;
-	color: black;
+	
+	color: white;
+
+	
 	
 }
 
@@ -74,12 +77,14 @@ main div {
 .section-title {
 	text-align: right;
 	font-style: bold;
-	color: gray;
+	color: white;
+	mix-blend-mode: difference;
+	
 }
 
-.section-details {
-
+.section-details p {
 	color: white;
+	mix-blend-mode: difference;
 }
 
 main div img {
