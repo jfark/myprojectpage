@@ -77,12 +77,15 @@ main div {
 .section-title {
 	text-align: right;
 	font-style: bold;
-	color: white;
 	mix-blend-mode: difference;
-	
 }
 
-.section-details p {
+.section-title h2 {
+	background: white;
+	color: black;
+}
+
+.section-details p, img {
 	color: white;
 	mix-blend-mode: difference;
 }
