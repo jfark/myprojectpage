@@ -89,9 +89,8 @@ main div img {
 }
 
 .divider {
-	display: inline-block;
 	padding: 100px;
-	background: blue;
+	background: red;
 	mix-blend-mode: difference;
 }
 
