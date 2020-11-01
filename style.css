@@ -19,10 +19,7 @@ body{
 }
 
 header {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	grid-column-gap: 3em;
-	grid-row-gap: 3em;
+	display: flex;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -32,6 +29,14 @@ header {
 	width: 100%;
 	margin: 0;
 	padding: 0;
+}
+
+.toc {
+	flex: 1;
+}
+
+.title {
+	flex: 2;
 }
 
 header h1 {
@@ -54,13 +59,11 @@ li:hover {
 }
 
 main {
-	display: grid;
-	grid-template-columns: 1fr 2fr ;
-	grid-column-gap: 3em;
-	grid-row-gap: 3em;
 	margin: 4em;
 	padding-top: 30%;
 	color: white;
+	display: flex;
+	flex-direction: column;
 }
 
 main div {	
@@ -68,15 +71,24 @@ main div {
 	padding: 1em;
 }
 
+.main-flex-container {
+	display: flex;
+}
+
 .section-title {
 	text-align: right;
 	font-style: bold;
 	mix-blend-mode: difference;
+	flex: 1;
 }
 
 .section-title h2 {
 	background: white;
 	color: black;
+}
+
+.section-details {
+	flex: 2;
 }
 
 .section-details p, img {
@@ -107,15 +119,6 @@ main div:hover {
 	top: 0;
 	max-width: 20%;
 	z-index: -100;
-}
-
-footer {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr ;
-	grid-column-gap: 1em;
-	grid-row-gap: 1em;
-	margin: 12em;
-	text-align: center
 }
 
 @media only screen and (max-width: 600px) {
