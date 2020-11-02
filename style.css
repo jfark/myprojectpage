@@ -6,12 +6,16 @@ html {
 	font-family: prestige-elite-std, monospace;
 	font-weight: 700;
 	font-style: normal;
+	margin: 0;
+	padding: 0;
 }
 
 body{
-
+	margin: 0;
+	padding: 0;
 	background: #FFF1E5;
 	background: #d64220;
+	background: white;
 }
 
 .blend-container {
@@ -20,11 +24,11 @@ body{
 
 header {
 	display: flex;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	left: 0;
-	background: whitesmoke;
-	background: white;
+	right: 0;
+	background: #FFF1E5;
 	color: black;
 	width: 100%;
 	margin: 0;
@@ -37,12 +41,13 @@ header {
 
 .title {
 	flex: 2;
+	text-align: center;
+	padding: 5% 3% 0 3%;
+
 }
 
-header h1 {
-	font-size: 2em;
-	padding: 1em;
-	margin: 0;
+.title img {
+	max-width: 75%;
 }
 
 header ul {
@@ -54,46 +59,54 @@ header li {
 	padding-bottom: 3%;
 }
 
-li:hover {
+a:hover {
 	font-style: italic;
 }
 
 main {
-	margin: 4em;
-	padding-top: 30%;
-	color: white;
-	display: flex;
-	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	color: black;
 }
 
 main div {	
-	text-align: left;
-	padding: 1em;
+	
 }
 
 .main-flex-container {
 	display: flex;
+	text-align: left;
+	margin-top: 10%;
+}
+
+.main-flex-container img {
+	max-width: 75%;
+}
+
+.center-me {
+	text-align: center;
 }
 
 .section-title {
 	text-align: right;
 	font-style: bold;
-	mix-blend-mode: difference;
+	/*mix-blend-mode: difference;*/
 	flex: 1;
 }
 
 .section-title h2 {
-	background: white;
-	color: black;
+	background: black;
+	color: white;
 }
 
 .section-details {
 	flex: 2;
+	padding: 0 3%;
 }
 
 .section-details p, img {
-	color: white;
-	mix-blend-mode: difference;
+	color: black;
+	/*mix-blend-mode: difference;*/
 }
 
 main div img {
@@ -101,17 +114,11 @@ main div img {
 }
 
 .divider {
-	padding: 100px;
-	background: red;
-	mix-blend-mode: difference;
+	/*padding: 100px;*/
+	background: black;
+	/*mix-blend-mode: difference;*/
+	margin: 0px;
 }
-
-/*
-main div:hover {
-	background-color: #6f9501;
-	color: white;
-}
-*/
 
 .image img {
 	position: fixed;
@@ -119,30 +126,4 @@ main div:hover {
 	top: 0;
 	max-width: 20%;
 	z-index: -100;
-}
-
-@media only screen and (max-width: 600px) {
-	header {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-column-gap: 1em;
-		grid-row-gap: 1em;
-		margin: 4em;
-		text-align: center;
-	}
-	main {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-column-gap: 3em;
-		grid-row-gap: 3em;
-		margin: 0 8em 0 8em;
-	}
-	footer {
-		display: grid;
-		grid-template-columns: 1fr ;
-		grid-column-gap: 1em;
-		grid-row-gap: 1em;
-		margin: 12em;
-		text-align: center
-	}
 }
