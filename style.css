@@ -29,8 +29,6 @@ html {
 body{
 	margin: 0;
 	padding: 0;
-	background: #FFF1E5;
-	background: #d64220;
 	background: white;
 }
 
@@ -132,7 +130,6 @@ main div {
 
 .section-details p, img {
 	color: black;
-	/*mix-blend-mode: difference;*/
 }
 
 main div img {
@@ -140,16 +137,10 @@ main div img {
 }
 
 .divider {
-	/*padding: 100px;*/
 	background: white;
-	/*mix-blend-mode: difference;*/
 	margin: 0px;
 	padding: 10% 0;
 	text-align: center;
-}
-
-.divider {
-	
 }
 
 .image img {
