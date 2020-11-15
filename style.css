@@ -89,10 +89,6 @@ main {
 	color: black;
 }
 
-main div {	
-	
-}
-
 .main-flex-container {
 	display: flex;
 	text-align: left;
@@ -114,7 +110,7 @@ main div {
 }
 
 .section-title h2 { 
-	background: #FFF1E5;;
+	background: #FFF1E5;
 	color: black;
 }
 
@@ -123,12 +119,15 @@ main div {
 	padding: 0 3%;
 }
 
-.section-details p, img {
+.section-details p {
 	color: black;
+	font-family: 'Calibre-Regular', sans-serif;
+	font-size: 1.2em;
 }
 
 main div img {
 	max-width: 100%;
+	min-width: 100%;
 }
 
 .divider {
@@ -136,6 +135,10 @@ main div img {
 	margin: 0px;
 	padding: 10% 0;
 	text-align: center;
+}
+
+h1 {
+	background: #fa4c25;
 }
 
 .image img {
