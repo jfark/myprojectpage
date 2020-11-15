@@ -32,10 +32,6 @@ body{
 	background: white;
 }
 
-.blend-container {
-	
-}
-
 header {
 	display: flex;
 	position: fixed;
@@ -54,7 +50,6 @@ header {
 
 .toc {
 	flex: 1;
-
 	background: #FFF1E5;
 	opacity: .9;
 }
