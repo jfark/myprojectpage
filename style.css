@@ -40,7 +40,7 @@ body{
 
 header {
 	display: flex;
-	position: sticky;
+	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -50,10 +50,15 @@ header {
 	padding: 0;
 }
 
+.header-image {
+	min-width: 100%;
+}
+
 .toc {
 	flex: 1;
 
 	background: #FFF1E5;
+	opacity: .9;
 }
 
 .toc img {
@@ -67,10 +72,6 @@ header {
 
 }
 
-.title img {
-	max-width: 50%;
-}
-
 header ul {
 	text-align: right;
 }
@@ -78,6 +79,11 @@ header ul {
 header li {
 	list-style-type: none;
 	padding-bottom: 3%;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #fa4c25;
 }
 
 a:hover {
@@ -111,7 +117,6 @@ main div {
 .section-title {
 	text-align: right;
 	font-style: bold;
-	mix-blend-mode: difference;
 	flex: 1;
 }
 
@@ -136,9 +141,15 @@ main div img {
 
 .divider {
 	/*padding: 100px;*/
-	background: black;
+	background: white;
 	/*mix-blend-mode: difference;*/
 	margin: 0px;
+	padding: 10% 0;
+	text-align: center;
+}
+
+.divider {
+	
 }
 
 .image img {
