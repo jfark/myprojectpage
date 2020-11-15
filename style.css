@@ -2,10 +2,26 @@
   box-sizing: border-box;
 }
 
+* { box-sizing: border-box; }
+
+@font-face {
+  font-family: Calibre-Medium;
+  src: url(fonts/Calibre-Medium.otf);
+}
+
+@font-face {
+  font-family: MiloSerifOT-Bold;
+  src: url(fonts/MiloSerifOT-Bold.otf);
+}
+
+@font-face {
+	font-family: Agrandir-GrandHeavy;
+	src: url(fonts/Agrandir-GrandHeavy.otf);
+}
+
 html {
-	font-family: prestige-elite-std, monospace;
-	font-weight: 700;
-	font-style: normal;
+    font-family: 'Calibre-Medium', sans-serif;
+	font-family: 'Agrandir-GrandHeavy', sans-serif;
 	margin: 0;
 	padding: 0;
 }
@@ -28,7 +44,6 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	background: #FFF1E5;
 	color: black;
 	width: 100%;
 	margin: 0;
@@ -37,6 +52,12 @@ header {
 
 .toc {
 	flex: 1;
+
+	background: #FFF1E5;
+}
+
+.toc img {
+	max-width: 100%;
 }
 
 .title {
@@ -47,7 +68,7 @@ header {
 }
 
 .title img {
-	max-width: 75%;
+	max-width: 50%;
 }
 
 header ul {
@@ -90,13 +111,13 @@ main div {
 .section-title {
 	text-align: right;
 	font-style: bold;
-	/*mix-blend-mode: difference;*/
+	mix-blend-mode: difference;
 	flex: 1;
 }
 
-.section-title h2 {
-	background: black;
-	color: white;
+.section-title h2 { 
+	background: #FFF1E5;;
+	color: black;
 }
 
 .section-details {
