@@ -24,6 +24,7 @@ html {
 	font-family: 'Agrandir-GrandHeavy', sans-serif;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 body{
