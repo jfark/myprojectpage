@@ -124,6 +124,7 @@ main {
 .section-details {
 	flex: 2;
 	padding: 0 3%;
+	max-width: 100%;
 }
 
 .section-details p {
@@ -156,6 +157,15 @@ main div img {
 	top: 0;
 	max-width: 20%;
 	z-index: -100;
+}
+
+.flex-image-row {
+	display: flex;
+	align-items: center;
+}
+
+.flex-image-row img {
+	padding: 3%;
 }
 
 .endnotes {
